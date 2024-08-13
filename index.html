@@ -1,372 +1,177 @@
-<!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-	<!-- Set the title of the page -->
-	<title>Portfolio - Data Science</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrielly Moraes - Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QPEF3B824S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QPEF3B824S');
-</script>
-
-	<!-- Set the character encoding of the page to UTF-8 -->
-	<meta charset="utf-8" />
-
-	<!-- Set the viewport properties to optimize for mobile devices -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-
-	<!-- Link to the main CSS stylesheet -->
-	<link rel="stylesheet" href="assets/css/main.css" />
-	
 </head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Andrielly Moraes</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<body class="is-preload">
-<!-- Google Tag Manager-->
+    <section class="hero">
+        <div class="container">
+            <h2>Bem-vindo ao meu portfólio!</h2>
+            <p>Analista de Dados especializado em Ecommerce.</p>
+        </div>
+    </section>
 
+    <section id="about">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <div class="about-content">
+                <img src="foto.png" alt="Foto de Andrielly" class="profile-photo">
+                <div class="about-text">
+                    <p>Olá, eu sou Andrielly de Moraes Pereira, uma profissional apaixonada por análise de dados e com uma sólida formação acadêmica em Estatística. Com um certificado de Cientista de Dados e experiência prática em Python, estou sempre em busca de soluções inovadoras para desafios de negócios. Minha experiência inclui projetos completos em Python, análise de dados de e-commerce e o desenvolvimento de insights estratégicos que ajudam empresas a otimizar suas operações e estratégias de marketing.</p>
+                    <p>Minha abordagem única combina técnicas avançadas de análise exploratória e visualização de dados para oferecer soluções precisas e eficazes. Estou constantemente atualizando minhas habilidades e conhecimentos para estar à frente das tendências e inovações no campo da análise de dados. Acredito que a combinação de uma base sólida em Estatística com habilidades práticas e uma visão estratégica pode transformar dados em insights valiosos para o sucesso dos negócios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="skills">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Python: Desenvolvimento de projetos completos, análise de dados e automação.</li>
+                <li>RStudio: Análise estatística avançada e modelagem de dados.</li>
+                <li>SQL: Consultas, manipulação e análise de bancos de dados.</li>
+                <li>Google Analytics 4: Análise de métricas e relatórios de desempenho.</li>
+                <li>Tableau: Visualização de dados e criação de dashboards.</li>
+                <li>GitHub: Controle de versão e colaboração em projetos de código.</li>
+                <li>Excel: Manipulação e análise de dados, fórmulas avançadas e gráficos.</li>
+                <li>Jupyter Notebook: Documentação e execução de códigos em Python para análise de dados.</li>
+                <li>Business Analytics: Análise e interpretação de dados para tomada de decisões empresariais.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="data-analysis">
+        <div class="container">
+            <h2>Análise de Dados</h2>
+            <article>
+                <h3>Visão Geral da Análise de Dados</h3>
+                <p>Minha abordagem em análise de dados é centrada na compreensão profunda do comportamento do consumidor e na aplicação de técnicas avançadas para gerar insights valiosos. Utilizo uma combinação de métodos estatísticos e ferramentas de visualização para transformar dados complexos em informações acionáveis.</p>
+                <p>Nos meus projetos, aplico técnicas de análise exploratória para identificar padrões, tendências e outliers nos dados. Isso me permite fornecer recomendações precisas para otimização de estratégias de marketing, melhoria da experiência do cliente e aumento da eficiência operacional.</p>
+                <p>Com uma forte base em estatística e programação, sou capaz de realizar análises detalhadas, criar modelos preditivos e desenvolver soluções personalizadas para atender às necessidades específicas de cada cliente. Meu objetivo é sempre entregar resultados que impulsionem o sucesso e o crescimento contínuo das empresas com as quais trabalho.</p>
+            </article>
+        </div>
+    </section>
+    
 
+    <section id="projects">
+        <div class="container">
+            <h2>Projetos</h2>
+            <article>
+                <h3>Análise de Tendências nas Vendas</h3>
+                <p>Este projeto utiliza técnicas avançadas de análise de dados para identificar e interpretar tendências 
+                nas vendas de um e-commerce. Aplicando métodos de análise exploratória e visualização de dados, o objetivo é oferecer insights sobre padrões de compra, sazonalidades e tendências emergentes, ajudando empresas a ajustar suas estratégias de marketing e otimizar suas operações para aumentar a receita.</p>
+                <a href="https://github.com/andriellymoraespereira/analise-de-visitas-em-ecommerce/blob/main/03_tendencias_temporal_nas_vendas.ipynb" class="btn">Ver Mais</a>
+            </article>
+            <article>
+                <h3>Segmentação de Clientes com Base no Valor e Número de Compras</h3>
+                <p>Este projeto foca na segmentação de clientes de um e-commerce usando técnicas de clustering para identificar grupos de clientes com 
+                base em seu valor e frequência de compras. O objetivo é criar perfis detalhados dos clientes que permitem personalizar estratégias de marketing e promoções, aumentando a retenção e a satisfação do cliente.</p>
+                <a href="https://github.com/andriellymoraespereira/analise-de-visitas-em-ecommerce/blob/main/04_Segmenta%C3%A7%C3%A3o__Clientes_com_Base_no_Valor_N%C3%BAmero_Compras.ipynb" class="btn">Ver Mais</a>
+            </article>
+            <article>
+                <h3>KPIs para E-commerce</h3>
+                <p>Desenvolvido para medir e acompanhar o desempenho de um e-commerce, este projeto envolve a criação de dashboards e relatórios
+                 de KPIs (Indicadores de Desempenho Chave). A análise abrange métricas como taxa de conversão, valor médio do pedido, custo de aquisição de clientes, entre outras, para fornecer uma visão clara do desempenho do negócio e apoiar a tomada de decisões estratégicas.</p>
+                 <a href="https://github.com/andriellymoraespereira/KPIs" class="btn">Ver Mais</a>
+            </article>
+            <article>
+                <h3>Melhoria da Experiência do Cliente em um E-commerce Usando Regressão</h3>
+                <p>Este projeto aplica técnicas de regressão para identificar fatores que afetam a experiência do cliente em um e-commerce. A análise visa melhorar a usabilidade e a satisfação do usuário,
+                 identificando pontos críticos no processo de compra e sugerindo melhorias com base em dados coletados. O objetivo é oferecer uma experiência de compra mais fluida e agradável, aumentando a fidelidade dos clientes.</p>
+                 <a href="https://github.com/andriellymoraespereira/analise_Regressao" class="btn">Ver Mais</a>
+            </article>
+        </div>
+    </section>
 
-	<!-- Wrapper -->
-	<div id="wrapper">
-
-		<!-- Main -->
-		<div id="main">
-			<div class="inner">
-
-				<!-- Header section -->
-				<header id="header">
-					<!-- Logo and site title -->
-					<a href="index.html" class="logo">
-						<strong>Portfólio de Projetos de Ciência de Dados</strong>
-					</a>
-
-					<!-- Social icons -->
-					<ul class="icons">
-						<li>
-							<a href="https://www.linkedin.com/in/andriellymoraespereira/" class="icon brands fa-linkedin">
-								<span class="label">LinkedIn</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://github.com/andriellymoraespereira" class="icon brands fa-github-square">
-								<span class="label">GitHub</span>
-							</a>
-						</li>
-						<li>
-							<a href="mailto:andrielly.moraespereira@gmail.com" class="icon solid fa-envelope">
-								<span class="label">Email</span>
-							</a>
-						</li>
-					</ul>
-				</header>
-
-
-				<!-- Banner section -->
-				<section id="banner">
-					<div class="content">
-						<header>
-							<!-- Main heading -->
-							<h1>Olá, bem vindo ao meu<br />
-								Portfólio de Projetos em  Ciência de Dados.
-							</h1>
-						</header>
-
-						<!-- Description -->
-						<p>Nesta página, você encontrará alguns de meus projetos desenvolvidos para demonstrar meus conhecimentos e
-							habilidades na resolução de problemas de negócios usando conceitos e ferramentas de ciência de dados.</p>
-						<p>Você também encontrará um resumo de minhas experiências como estatístico por mais de 3 anos, bem como minhas habilidades técnicas e interpessoais adquiridas ao participar e
-							desenvolvimento de projetos relacionados à ciência de dados.</p>
-						<p>Sinta-se livre para me contatar. As informações do meu LinkedIn, e-mail e GitHub estão disponíveis no
-							início e fim da página.</p>
-					</div>
-
-					<!-- Image -->
-					<span class="image object">
-						<img src="images/data-science.png" alt="Data Science" />
-					</span>
-				</section>
-
-
-
-				<!-- About me section -->
-				<section>
-					<header class="main">
-						<!-- Main heading -->
-						<h1>About me</h1>
-					</header>
-
-					<!-- Content -->
-					<h2 id="content">Meu nome é Andrilly Moraes Pereira</h2>
-					<p>Sou Analista de Dados com formação em estatística e tenho mais de dois anos de experiência com 
-						planejamento e análise de Indicadores. Além disso, aplico
-						técnicas de aprendizado de máquina para resolver problemas de negócios.</p>
-
-					<p>Meu objetivo principal é trabalhar como Business Analytics, resolvendo problemas de negócios com 
-						técnicas de aprendizagem de maquina e análise estatística para ajudar os gestores a tomar as melhores
-						decisões estratégicas.</p>
-
-					<p>Sesma,Captação de dados da web, tratamento dos dados, análise estatística, trabalho em equipe para analisar, monitorar KPIs e 
-						produção de relatórios.</p>
-					<p>Seaster,Captação de dados da web, tratamento dos dados, análise estatística, trabalho em equipe para analisar e monitorar os gastos 
-						dos recursos financeiros públicos e produção de relatórios.</p>
-					
-				</section>
-
-
-				<!-- Section -->
-				<section>
-					<header class="major">
-						<h2>Soft Skills</h2>
-					</header>
-					<div class="features">
-						<article>
-							<span class="icon fa-person-dress"></span>
-							<div class="content">
-								<h3>Habilidades e Competências Relacionadas ao Comportamento Humano</h3>
-								<ul>
-									<li>Capacidade analítica & Estabilidade emocional.</li>
-									<li>Comunicação & Influência.</li>
-									<li>Assertividade & Tomada de riscos.</li>
-									<li>Planejamento & organização.</li>
-								</ul>
-							</div>
-						</article>
-				</section>
-
-
-				<!-- Section -->
-				<section>
-						<header class="major">
-							<h2>Hard Skills</h2>
-						</header>
-						<div class="features">
-							<article>
-								<span class="icon fa-gem"></span>
-								<div class="content">
-									<h3>Programming Languages and Databases</h3>
-									<ul>
-										<li>Python.</li>
-										<li>RStudio.</li>
-										<li>SQL for data extraction.</li>
-										<li>SQL Server, MongoDB, and SQLite databases.</li>
-									</ul>
-								</div>
-							</article>
-						<article>
-							<span class="icon solid fa-paper-plane"></span>
-							<div class="content">
-								<h3>Statistics and Machine Learning</h3>
-								<ul>
-									<li>Descriptive statistics (location, dispersion, skewness, kurtosis, density).</li>
-									<li>Regression, classification, clustering algorithms, and "learn to rank".</li>
-									<li>Data balancing techniques, feature selection, and dimensionality reduction.</li>
-									<li>Performance metrics of algorithms (RMSE, MAE, MAPE, Confusion Matrix, Precision,
-										Recall, ROC Curve, Lift Curve, AUC, Silhouette Score, DB-Index).</li>
-									<li>Marketing Analytics: KPIs, Customer Segmentation, A/B Test analysis, Optimization of Prices and Product Mix and 
-										recommendation system.</li>
-									<li>people analytics.</li>
-								</ul>
-							</div>
-						</article>
-						<article>
-							<span class="icon solid fa-rocket"></span>
-							<div class="content">
-								<h3>Data Visualization</h3>
-								<ul>
-									<li>Matplotlib, Seaborn and Plotly.</li>
-									<li>Tableau and Dash.Plotly.</li>
-								</ul>
-							</div>
-						</article>
-						<article>
-							<span class="icon solid fa-signal"></span>
-							<div class="content">
-								<h3>Software Engineering</h3>
-								<ul>
-									<li>Git & Github.</li>
-									<li>Python APIs.</li>
-									<li>RStudio.</li>
-									<li>Google Cloud Platform (GCP).</li>
-									<li>Jupyter Notebook.</li>
-									<li>VirtualBox.</li>
-								</ul>
-							</div>
-						</article>
-						<article>
-							<div class="content">
-								<h3>Sistema de Gerenciamento de Banco de Dados(SGBD)</h3>
-								<ul>
-									<li>Microsoft SQL Server.</li>
-									<li>PostgreSQL.</li>
-									<li>Oracle.</li>
-								</ul>
-							</div>
-						</article>
-					</div>
-				</section>
-
-				<section>
-					<header class="main">
-						<h1>Professional Experience</h1>
-					</header>
-
-					<h2 id="content">3+ Projetos Completos em Data Science</h2>
-					<p>Desenvolvi soluções de dados para problemas de negócios, próximas aos desafios reais enfrentados
-						pelas empresas, utilizando dados públicos de competições de Data Science.</p>
-
-					<h2 id="content">3+ Projetos Completos em Business Analytics</h2>
-					<p>Meus últimos projetos são focados em business Analitics, especificamente em Marketing Analytics.
-						Essa é uma área que tem me motivado bastante, pois, amo analisar dados para entender padrões, 
-						avaliar estratégias e tomar melhores decisões. Além disso, ao longo dos anos,  à medida que as 
-						empresas expandiram para novas categorias de marketing, novas tecnologias foram adotadas para 
-						apoiá-las. E o Marketing Analytics, tem sido essencial para a tomada de decisões corretas e a
-					   execução eficiente das campanhas e iniciativas de marketing de uma empresa.</p>
-				</section>
+    <!-- Seção de Blog -->
+<section id="blog" class="blog-section">
+    <h2>Blog</h2>
+    <div class="blog-post">
+        <h3>Título do Post 1</h3>
+        <p class="blog-date">Data: 01/01/2024</p>
+        <p class="blog-summary">Aqui está um resumo do primeiro post do blog. Ele aborda tópicos interessantes e relevantes para o seu público, oferecendo insights e atualizações valiosas.</p>
+        <a href="link-para-o-post-1" class="read-more">Leia mais</a>
+    </div>
+    <div class="blog-post">
+        <h3>Título do Post 2</h3>
+        <p class="blog-date">Data: 15/01/2024</p>
+        <p class="blog-summary">Este é um resumo do segundo post do blog. Ele explora novas ideias e compartilha informações úteis para os leitores.</p>
+        <a href="link-para-o-post-2" class="read-more">Leia mais</a>
+    </div>
+    <!-- Adicione mais posts conforme necessário -->
+</section>
 
 
-				<!-- Section -->
-				<section>
-					<header class="major">
-						<h1>Data Science Projects</h1>
-					</header>
-					<div class="posts">
-						<article>
-							<a href="https://github.com/andriellymoraespereira/analise_Regressao" class="image"><img
-									src="images/item-1.png" alt="" /></a>
-							<h3>E-commerce - Análise de Regressão Linear, Lasso e Ridge</h3>
-							<p>Uma empresa de e-commerce comercializa produtos através de seu web site e através de seu app para 
-								dispositivos móveis. O objetivo é aumentar as vendas, mas o orçamento permite investir somente no web site ou na
-								app neste momento. Este projeto foi criado para melhorar a experiência do cliente durante a 
-								navegação no sistema, aumentado o tempo logado, aumentado o engajamento e, consequentemente, aumentando as vendas.
-							</p>
-							<h4>Tools:</h4>
-							<div class="column-ul-container">
-								<ul class="column-ul">
-									<li>Python</li>
-									<li>Git and Github</li>
-									<li>Dash.Plotly</li>
-								</ul>
-								<ul>
-									<li>Jupyter Notebook</li>
-									<li>Visual Studio Code</li>
-									<li>Pandas and Numpy</li>
-									<li>Matplotlib and Seaborn</li>
-									<li>Linear Regression, Lasso, Ridge</li>
-								</ul>
+    <section id="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <form action="your_form_handler.php" method="post">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required>
 
-								<ul class="actions">
-									<li><a href="https://github.com/andriellymoraespereira/analise_Regressao/blob/main/AnaliseRegressao.ipynb"
-											class="button">Learn
-											More</a></li>
-								</ul>
-						</article>
-						<article>
-							<a href="https://github.com/andriellymoraespereira/KPIs" class="image"><img
-									src="images/kpi.png" alt="" /></a>
-							<h3>Indicadores Chave de Performance - KPIs</h3>
-							<p>Objetivo desse Projeto em análise de Indicadores Chave de Performance(KPIs) é fornecer resultados 
-								analíticos que posso fornecer assistência para impulsionar o processo de marketing, além disso, 
-								permitir que os profissionais de Marketing avaliem o sucesso de suas iniciativas. Isso, 
-								impactará em tomadas de decisões corretas e a execução eficiente das campanhas e iniciativas de
-								marketing de uma empresa.</p>
-							<h4>Tools:</h4>
-							<div class="column-ul-container">
-								<ul class="column-ul">
-									<li>Git</li>
-									<li>Python</li>
-									<li>Jupyter Notebook</li>
-								</ul>
-								<ul class="column-ul">
-									<li>Pandas and Numpy</li>
-									<li>Descriptive statistics</li>
-									<li>Matplotlib and Seaborn</li>
-								</ul>
-								<ul class="actions">
-									<li><a href="https://github.com/andriellymoraespereira/KPIs/blob/main/AIP_KPIs.ipynb"
-											class="button">Learn More</a></li>
-								</ul>
-						</article>
-						<article>
-							<a href="https://github.com/andriellymoraespereira/testeAB" class="image"><img
-									src="images/projeto.png" alt="" /></a>
-							<h3>Teste A/B de marketing</h3>
-							<p>Neste projeto, uma empresa de marketing deseja executar campanhas de sucesso, mas o mercado é 
-								complexo e várias opções podem funcionar. Então, normalmente eles realizam testes A/B, que é um 
-								processo de experimentação aleatória em que duas ou mais versões de uma variável (página da web, 
-								elemento de página, banner, etc.) são mostradas para diferentes segmentos de pessoas ao mesmo 
-								tempo para determinar qual versão deixa o máximo impacto e impulsiona as métricas de negócios.</p>
-							<h4>Tools:</h4>
-							<div class="column-ul-container">
-								<ul class="column-ul">
-									<li>Git</li>
-									<li>Python</li>
-									<li>Jupyter Notebook</li>
-									<li>Pandas and Numpy</li>
-									<li>Descriptive statistics</li>
-									<li>scipy.stats</li>
-								</ul>
-							</div>
-							<ul class="actions">
-								<li><a href="https://github.com/andriellymoraespereira/testeAB/blob/master/testeA_B.ipynb"
-										class="button">Learn More</a></li>
-							</ul>
-						</article>
-						<article>
-							<a href="https://public.tableau.com/app/profile/andrielly.moraes/viz/Dashboards_Netflix/Histria1" class="image"><img
-									src="images/netflix.png" alt="" /></a>
-							<h3>Dashboards_Netflix</h3>
-							<p>Netflix é uma das plataformas de streaming de mídia e vídeo mais populares. Eles têm mais de 8.000 
-								filmes ou programas de TV disponíveis em sua plataforma. Em meados de 2021, eles já tinham mais de 200 
-								milhões de assinantes em todo o mundo.</p>						
-								<ul class="actions">
-									<li><a href="https://public.tableau.com/app/profile/andrielly.moraes/viz/Dashboards_Netflix/Histria1"
-											class="button">Learn More</a></li>
-								</ul>
-						</article>
-					</div>
-				</section>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
 
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" required></textarea>
 
-				<!-- Contact section -->
-				<section>
-					<header class="major">
-						<h2>Contact</h2>
-					</header>
-					<p>Sinta-se livre para me contatar.</p>
-					<ul class="contact">
-						<li class="icon solid fa-envelope"><a
-								href="andrielly.moraespereira@gmail.com">andrielly.moraespereira@gmail.com</a></li>
-						<li class="icon brands fa-linkedin"><a
-								href="https://www.linkedin.com/in/andriellymoraespereira/">LinkedIn</a></li>
-						<li class="icon brands fa-github-square"><a href="https://github.com/andriellymoraespereira">GitHub</a></li>
-					</ul>
-				</section>
-			</div>
-		</div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
 
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
-	<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7PX65J3"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-</body>
+<!-- Rodapé -->
+<footer id="footer">
+    <div class="container">
+        <p>&copy; 2024 Andrielly de Moraes Pereira. Todos os direitos reservados.</p>
+        <div class="contact-info">
+            <p>Contato: <a href="andrielly.moraespereira@gmail.com">andrielly.moraespereira@gmail.com</a></p>
+            <p>
+                <a href="https://www.linkedin.com/in/andrielly-moraes-dados" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/andriellymoraespereira" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/andriellydemoraespereira" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </p>
+        </div>
+        <div class="footer-links">
+            <a href="/privacy-policy.html">Política de Privacidade</a>
+            <a href="/terms-of-service.html">Termos de Serviço</a>
+            <a href="/sitemap.html">Sitemap</a>
+        </div>
+        <div class="newsletter">
+            <p>Inscreva-se na nossa newsletter:</p>
+            <form action="/subscribe" method="post">
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </div>
+    </div>
+</footer>
 
 </html>
