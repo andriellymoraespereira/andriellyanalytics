@@ -212,6 +212,62 @@
 
                 <button type="submit">Enviar</button>
             </form>
+            <!-- Adicione este código dentro da seção apropriada da sua página -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Verifica se estamos na página 'contact-me'
+    if (window.location.pathname.includes('/contact-me')) {
+      gtag('event', 'form_submission', {
+        'event_category': 'Contato',
+        'event_label': 'Envio de Formulário de Contato',
+        'value': 1
+      });
+    }
+  });
+</script>
+<script>
+    document.getElementById('id-do-link').addEventListener('click', function() {
+      gtag('event', 'download_material', {
+        'event_category': 'Interações',
+        'event_label': 'Download de Material',
+        'value': 1
+      });
+    });
+  </script>
+<script>
+    gtag('event', 'inscricao_newsletter', {
+      'event_category': 'Conversões',
+      'event_label': 'Inscrição na Newsletter',
+      'value': 1
+    });
+  </script>
+<script>
+    gtag('event', 'clicar_botao_contactar', {
+      'event_category': 'Interações',
+      'event_label': 'Botão de Contato',
+      'value': 1
+    });
+  </script>
+<script>
+    gtag('event', 'visualizacao_servico', {
+      'event_category': 'Comportamento',
+      'event_label': 'Página de Serviço',
+      'value': 1
+    });
+  </script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('utm_source') === 'instagram') {
+        gtag('event', 'instagram_traffic', {
+          'event_category': 'Tráfego',
+          'event_label': 'Instagram',
+          'value': 1
+        });
+      }
+    });
+  </script>
+          
         </div>
     </section>
 
