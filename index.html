@@ -37,6 +37,39 @@
 </head>
 
 <body>
+  <script>
+    // Função para enviar eventos para a API de Conversões
+    function enviarEventoAPI(event_name, user_data, custom_data) {
+        fetch('https://graph.facebook.com/v12.0/ 8718297104865495/events', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                data: [{
+                    event_name: event_name,
+                    event_time: Math.floor(Date.now() / 1000),
+                    user_data: user_data,
+                    custom_data: custom_data
+                }],
+                access_token: 'EAAG6qvkrRbkBO8Al7lX5ian7VZBrx8O1D8NpA5KkRf70R3kvSFZBTnuQxBpkQ001nsvDy3g1C3UupZAoAEMPIvLH3d2l1ZC4hPkkyLnMwRXCcsOWn62mdHZBvztmyiLJjyZCvdCNSwZBPa6OvN5Qw5kZC9VR7Oiq1ZCSqzzY4oFLjoFqfFl78fIGvsqlsQNiYlgxZCYAZDZD'
+            })
+        })
+        .then(response => response.json())
+        .then(data => console.log('Sucesso:', data))
+        .catch(error => console.error('Erro:', error));
+    }
+
+    // Exemplo de uso: Evento de contato
+    document.getElementById('contato').addEventListener('click', function() {
+        enviarEventoAPI(
+            'Contact', // Nome do evento que estamos rastreando
+            { em: 'andrielly.moraespereira@gmail.com' }, // Dados do usuário, como e-mail (criptografado, se necessário)
+            { content_name: 'Formulário de Contato' } // Dados customizados do evento
+        );
+    });
+</script>
+
     <header>
 
         <!-- Google tag (gtag.js) -->
